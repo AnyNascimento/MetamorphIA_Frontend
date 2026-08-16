@@ -1,8 +1,18 @@
-export default function LoginPage() {
-  return (
-    <div className='w-full h-full flex justify-center items-center'>
-        <div className='w-[29.3vw] h-[47.1vh] min-w-[320px] min-h-87.5 bg-[#FFFDFA] rounded-[50px]'>
-        </div>
-    </div>
-  );
+import LogIn from "@/components/LogIn";
+import FormLogin from "@/components/FormLogin";
+
+export default function Login(){
+    return(
+        <>
+            <div className="relative flex justify-center mt-6 overflow-hidden">
+                <img className='z-10 pointer-events-none select-none w-10 md:w-auto -mr-4
+                    md:-mr-6'
+                    src="/encaracoladoLogin.svg"
+                    alt="" 
+                />
+                <FormLogin />
+            </div>
+            <LogIn />
+        </>
+    )
 }
