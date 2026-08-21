@@ -2,7 +2,7 @@ import Menu from "@/components/Menu";
 export default function ChatInicial(){
     return (
         <div>
-            <Menu></Menu>
+            <Menu />
         </div>
     )
 }

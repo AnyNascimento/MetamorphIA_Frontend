@@ -41,15 +41,15 @@ export default function Auth({
             <div className="relative z-10 flex flex-col min-h-screen">
                 <div className="p-8 w-full mx-auto">
                     <header className="flex bg-[#433F3F] text-2xl justify-center
-                        items-center w-full max-w-[90vw] min-h-15 h-[7vh] mx-auto
-                        justify-center rounded-[70px] text-[#FFFDFA] text-[2rem]
-                        gap-2">
+                        items-center w-full max-w-[90vw] mx-auto
+                        rounded-[70px] text-[#FFFDFA] gap-2
+                        md:h-14 lg:max-h-20 sm:min-h-6 sm:h-12 md:text-[2rem] sm:text-[1rem] sm:min-text-[0.5rem]">
                         <img src={Logo.src} className="w-[2.75rem]" />
                         <p className={` ${TextMeOne.variable} font-(family-name:--font-text-me-one)`}>MetamorphIA</p>
                     </header>
                 </div>
-                <main className={`flex-1 ${poppins.variable} font-(family-name:--font-poppins)`}>
-                    {children}
+                <main className={`flex flex-1 ${poppins.variable} font-(family-name:--font-poppins) items-center justify-center flex-col`}>
+                        {children}
                 </main>
             </div>
         </div>

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Input from "./Input";
-import CheckBox from "./CheckBox";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function FormLogin(){
     const [identificador, setIdentificar] = useState("");
@@ -25,7 +25,7 @@ export default function FormLogin(){
                         <p className='text-[#433F3F] text-3xl'>Entre</p>
                     </div>
 
-                    <div className="flex flex-col items-center gap-3">
+                    <div className="flex flex-col items-center gap-3 w-full">
                         <Input
                             type="text"
                             placeholder="Digite seu telefone ou e-mail"
@@ -44,8 +44,11 @@ export default function FormLogin(){
                         Cadastrar
                     </Button>
 
-                    <div className="flex flex-col items-center cursor-pointer">
-                        <p className="text-[#797979] text-sm">Não tem uma conta? <u><b>Cadastre-se</b></u> </p>
+                    <div className="flex flex-row items-center cursor-pointer text-[#797979] text-sm justify-center gap-1">
+                        <p>Não tem uma conta? </p>
+                        <Link href={"./cadastro"}>
+                            <p> <u><b>Cadastre-se</b></u> </p>
+                        </Link>
                     </div>
                 </div>
         </form>
