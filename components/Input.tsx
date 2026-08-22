@@ -1,27 +1,25 @@
-"use client"
+"use client";
 
 type InputProps = {
-    type?: string,
-    placeholder?: string,
-    value?: string,
-    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  type?: string;
+  placeholder?: string;
+  value?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export default function Input({
-    type = "text",
-    placeholder,
-    value,
-    onChange,
-}: InputProps)
-{
-    return(
-            <input
-                type={type}
-                placeholder={placeholder}
-                value={value}
-                onChange={onChange}
-                className="w-full outline-none bg-[#D9D9D9] rounded-[70px]
-                py-[0.4rem] px-[0.7rem] text-[#797979] text-sm max-w-[23rem]"
-            />
-    )
+  type = "text",
+  placeholder,
+  value,
+  onChange,
+}: InputProps) {
+  return (
+    <input
+      type={type}
+      placeholder={placeholder}
+      value={value}
+      onChange={onChange}
+      className="w-full rounded-[70px] bg-[#D9D9D9] px-[0.7rem] py-[0.55rem] text-sm text-[#797979] outline-none"
+    />
+  );
 }

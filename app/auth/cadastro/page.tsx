@@ -1,19 +1,19 @@
 import LogIn from "@/components/LogIn";
 import FormCadastro from "@/components/FormCadastro";
 
-export default function Cadastro(){
-    
-    return(
-        <>
-            <div className="relative flex justify-center items-center overflow-hidden">
-                <img className='z-10 pointer-events-none select-none w-10 md:w-auto -mr-4
-                    md:-mr-6'
-                    src="/encaracoladoCadastro.svg"
-                    alt="" 
-                />
-                <FormCadastro />
-            </div>
-            <LogIn />
-        </>
-    )
+export default function Cadastro() {
+  return (
+    <div className="flex min-h-[calc(100dvh-5rem)] flex-col justify-center sm:min-h-[calc(100dvh-7rem)]">
+      <div className="relative flex w-full items-stretch justify-center overflow-hidden px-4 sm:px-6">
+        <img
+          className="z-10 w-auto max-w-[18vw] shrink-0 self-stretch -mr-3 object-contain pointer-events-none select-none sm:-mr-4 md:-mr-6"
+          src="/encaracoladoCadastro.svg"
+          alt=""
+        />
+        <FormCadastro />
+      </div>
+
+      <LogIn />
+    </div>
+  );
 }
